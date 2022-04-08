@@ -36,6 +36,20 @@ app.post('/api/notes', (req, res) => {
   res.status(201).end()
 })
 
+app.put('/api/note/:idNote', (req, res) => {
+  // actualizar una nota
+  const idNote = parseInt(req.params.idNote)
+  const newNote = req.body
+  notes.forEach(note => {
+    if (note.id === idNote) {
+      note.id = newNote.id
+      note.text = newNote.text
+      note.done = newNote.done
+    }
+  })
+  res.status(204).end()
+})
+
 app.delete('/api/note/:idNote', (req, res) => {
   // eliminar la nota seleccionada
   const idNote = parseInt(req.params.idNote)
