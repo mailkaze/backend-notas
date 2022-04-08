@@ -1,0 +1,28 @@
+{
+  "name": "notas",
+  "version": "1.0.0",
+  "description": "backend para el ejercicio fullstack notas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailkaze/backend-notas.git"
+  },
+  "keywords": [
+    "node.js",
+    "react",
+    "firebase"
+  ],
+  "author": "mailkaze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mailkaze/backend-notas/issues"
+  },
+  "homepage": "https://github.com/mailkaze/backend-notas#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
